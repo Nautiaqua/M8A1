@@ -35,5 +35,24 @@ public class M8A1GROUP11 {
         for (int y = 4; y != -1; y--) { // Number 2. Display the reverse order.
             System.out.println(IntegerList[y]);
         }
+        System.out.println();
+        System.out.println("Display again the original list:");
+        for (int x = 0; x < 5; x++) { // Number 3. Display again the original list (the way the user entered the integers).
+            System.out.println(IntegerList[x]);
+        }
+        Arrays.sort(IntegerList);
+        System.out.println();
+        System.out.println("Sort the original list in ascending order:");
+        for (int x = 0; x < 5; x++) { // Number 4. Sort the original list in ascending order (the way the user entered the integers).
+            System.out.println(IntegerList[x]);
+            
+            }
+        
+        System.out.println();
+        System.out.println("Original Order:");
+        for (int x = 0; x < 5; x++) { // Number 1. Display the original list (the way the user entered the integers).
+            System.out.println(IntegerList[x]);
+                     
+        }
     }
 }
