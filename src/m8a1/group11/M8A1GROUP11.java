@@ -24,35 +24,41 @@ public class M8A1GROUP11 {
             IntegerList[i] = input;
         }
         
+        int[] IntegerListClone = IntegerList.clone();
+        
         System.out.println();
-        System.out.println("Original Order:");
+        System.out.println("1. Display original order:");
         for (int x = 0; x < 5; x++) { // Number 1. Display the original list (the way the user entered the integers).
             System.out.println(IntegerList[x]);
         }
         
         System.out.println();
-        System.out.println("Reversed Order:");
+        System.out.println("2. Display reversed order:");
         for (int y = 4; y != -1; y--) { // Number 2. Display the reverse order.
             System.out.println(IntegerList[y]);
         }
         System.out.println();
-        System.out.println("Display again the original list:");
+        System.out.println("3. Display the original list again:");
         for (int x = 0; x < 5; x++) { // Number 3. Display again the original list (the way the user entered the integers).
             System.out.println(IntegerList[x]);
         }
-        Arrays.sort(IntegerList);
+        
+        Arrays.sort(IntegerListClone);
         System.out.println();
-        System.out.println("Sort the original list in ascending order:");
+        System.out.println("4. Display the list in ascending order:");
         for (int x = 0; x < 5; x++) { // Number 4. Sort the original list in ascending order (the way the user entered the integers).
-            System.out.println(IntegerList[x]);
+            System.out.println(IntegerListClone[x]);
             
             }
         
         System.out.println();
-        System.out.println("Original Order:");
-        for (int x = 0; x < 5; x++) { // Number 1. Display the original list (the way the user entered the integers).
+        System.out.println("5. Display the original list:");
+        for (int x = 0; x < 5; x++) { // Number 5.
             System.out.println(IntegerList[x]);
                      
         }
+        
+        // neil ikaw ka na sa number 6, ginawa na ni calub yung 3,4, and 5
+        // ~ jose
     }
 }
