@@ -22,7 +22,18 @@ public class M8A1GROUP11 {
             System.out.print("Enter an integer (5 max): ");
             int input = obtainer.nextInt();
             IntegerList[i] = input;
-            System.out.println(IntegerList[i]);
+        }
+        
+        System.out.println();
+        System.out.println("Original Order:");
+        for (int x = 0; x < 5; x++) { // Number 1. Display the original list (the way the user entered the integers).
+            System.out.println(IntegerList[x]);
+        }
+        
+        System.out.println();
+        System.out.println("Reversed Order:");
+        for (int y = 4; y != -1; y--) { // Number 2. Display the reverse order.
+            System.out.println(IntegerList[y]);
         }
     }
 }
