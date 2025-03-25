@@ -55,12 +55,37 @@ public class M8A1GROUP11 {
         System.out.println("5. Display the original list:");
         for (int x = 0; x < 5; x++) { // Number 5.
             System.out.println(IntegerList[x]);
-                     
         }
+               
+            
+                     System.out.println();
+        System.out.print("6. Enter a number you want to search the element of an array: ");
+        int searchNum = obtainer.nextInt();
+        boolean foundIndex = false;
+        int index = -1;
+        for (int i = 0; i < 5; i++) {
+            if (IntegerList[i] == searchNum) {
+                foundIndex = true;
+                index = i;
+                break;
+            }
+        }
+        if (foundIndex) {
+            System.out.println("Element " + searchNum + " found at index: " + index);
+        } else {
+            System.out.println("Element " + searchNum + " NOT found in the list.");
+        }
+        
+        // neil ikaw ka na sa number 6, ginawa na ni calub yung 3,4, and 5
+        // ~ jose - pogi si calub
+    }
+}
+            
+        
         
         // neil ikaw ka na sa number 6, ginawa na ni calub yung 3,4, and 5
         // ~ jose
         
         // pahingi baked mac ~ calub
-    }
-}
+    
+
